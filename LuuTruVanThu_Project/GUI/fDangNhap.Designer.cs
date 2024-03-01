@@ -129,7 +129,7 @@ namespace LuuTruVanThu_Project.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(832, 478);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btCancel);
