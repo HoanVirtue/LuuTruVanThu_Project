@@ -46,14 +46,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="GUI\fDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GUI\fDangNhap.Designer.cs">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fTimKiemVanBanDen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fTimKiemVanBanDen.Designer.cs">
+      <DependentUpon>fTimKiemVanBanDen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fTimKiemVanBanDi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fTimKiemVanBanDi.Designer.cs">
+      <DependentUpon>fTimKiemVanBanDi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fTongHop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fTongHop.Designer.cs">
+      <DependentUpon>fTongHop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fTrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fTrangChu.Designer.cs">
+      <DependentUpon>fTrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fVanBanDen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fVanBanDen.Designer.cs">
+      <DependentUpon>fVanBanDen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fVanBanDi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fVanBanDi.Designer.cs">
+      <DependentUpon>fVanBanDi.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\fDangNhap.resx">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +114,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DAO\" />
+    <Folder Include="DTO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
