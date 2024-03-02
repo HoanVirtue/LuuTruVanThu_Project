@@ -16,7 +16,8 @@ namespace LuuTruVanThu_Project.DAO
         }
         public bool CheckLogin(DonVis model, int Nam)
         {
-            DonVis donVi = _context.DonVis.SingleOrDefault(model => model.)
+            //DonVis donVi = _context.DonVis.SingleOrDefault(model => model.)
+            return false;
         }
     }
 }
