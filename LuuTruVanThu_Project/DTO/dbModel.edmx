@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="vanthu_databaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="DonVi_Nam">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MaDonVi" Type="int" />
+          <Property Name="Nam" Type="int" />
+        </EntityType>
+        <EntityType Name="DonVis">
+          <Key>
+            <PropertyRef Name="MaDonVi" />
+          </Key>
+          <Property Name="MaDonVi" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenDonVi" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Nams">
+          <Key>
+            <PropertyRef Name="Nam" />
+          </Key>
+          <Property Name="Nam" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VanBanDens">
+          <Key>
+            <PropertyRef Name="SoDen" />
+          </Key>
+          <Property Name="SoDen" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SoKyHieu" Type="varchar" MaxLength="100" />
+          <Property Name="TrichYeuNoiDung" Type="text" />
+          <Property Name="LoaiVanBan" Type="nvarchar" MaxLength="100" />
+          <Property Name="CoQuanBanHanh" Type="nvarchar" MaxLength="100" />
+          <Property Name="NgayBanHanh" Type="date" />
+          <Property Name="NgayDen" Type="date" />
+          <Property Name="NgayXuLy" Type="date" />
+          <Property Name="NoiNhan" Type="nvarchar" MaxLength="255" />
+          <Property Name="NguoiNhan" Type="nvarchar" MaxLength="255" />
+          <Property Name="DoMat" Type="nvarchar" MaxLength="100" />
+          <Property Name="DoKhan" Type="nvarchar" MaxLength="100" />
+          <Property Name="TepTuLieu" Type="varchar" MaxLength="255" />
+          <Property Name="MaDonVi" Type="int" />
+        </EntityType>
+        <EntityType Name="VanBanDis">
+          <Key>
+            <PropertyRef Name="SoDi" />
+          </Key>
+          <Property Name="SoDi" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SoKyHieu" Type="varchar" MaxLength="100" />
+          <Property Name="TrichYeuNoiDung" Type="text" />
+          <Property Name="LoaiVanBan" Type="nvarchar" MaxLength="100" />
+          <Property Name="DonViBanHanh" Type="nvarchar" MaxLength="100" />
+          <Property Name="NgayBanHanh" Type="date" />
+          <Property Name="NoiNhan" Type="nvarchar" MaxLength="255" />
+          <Property Name="NgayXuLy" Type="date" />
+          <Property Name="TepTuLieu" Type="varchar" MaxLength="255" />
+          <Property Name="MaDonVi" Type="int" />
+        </EntityType>
+        <Association Name="FK__DonVi_Nam__MaDon__571DF1D5">
+          <End Role="DonVis" Type="Self.DonVis" Multiplicity="0..1" />
+          <End Role="DonVi_Nam" Type="Self.DonVi_Nam" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DonVis">
+              <PropertyRef Name="MaDonVi" />
+            </Principal>
+            <Dependent Role="DonVi_Nam">
+              <PropertyRef Name="MaDonVi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DonVi_Nam__Nam__5812160E">
+          <End Role="Nams" Type="Self.Nams" Multiplicity="0..1" />
+          <End Role="DonVi_Nam" Type="Self.DonVi_Nam" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nams">
+              <PropertyRef Name="Nam" />
+            </Principal>
+            <Dependent Role="DonVi_Nam">
+              <PropertyRef Name="Nam" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__VanBanDen__MaDon__5165187F">
+          <End Role="DonVis" Type="Self.DonVis" Multiplicity="0..1" />
+          <End Role="VanBanDens" Type="Self.VanBanDens" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DonVis">
+              <PropertyRef Name="MaDonVi" />
+            </Principal>
+            <Dependent Role="VanBanDens">
+              <PropertyRef Name="MaDonVi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__VanBanDis__MaDon__5441852A">
+          <End Role="DonVis" Type="Self.DonVis" Multiplicity="0..1" />
+          <End Role="VanBanDis" Type="Self.VanBanDis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DonVis">
+              <PropertyRef Name="MaDonVi" />
+            </Principal>
+            <Dependent Role="VanBanDis">
+              <PropertyRef Name="MaDonVi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="vanthu_databaseModelStoreContainer">
+          <EntitySet Name="DonVi_Nam" EntityType="Self.DonVi_Nam" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DonVis" EntityType="Self.DonVis" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Nams" EntityType="Self.Nams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VanBanDens" EntityType="Self.VanBanDens" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VanBanDis" EntityType="Self.VanBanDis" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__DonVi_Nam__MaDon__571DF1D5" Association="Self.FK__DonVi_Nam__MaDon__571DF1D5">
+            <End Role="DonVis" EntitySet="DonVis" />
+            <End Role="DonVi_Nam" EntitySet="DonVi_Nam" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DonVi_Nam__Nam__5812160E" Association="Self.FK__DonVi_Nam__Nam__5812160E">
+            <End Role="Nams" EntitySet="Nams" />
+            <End Role="DonVi_Nam" EntitySet="DonVi_Nam" />
+          </AssociationSet>
+          <AssociationSet Name="FK__VanBanDen__MaDon__5165187F" Association="Self.FK__VanBanDen__MaDon__5165187F">
+            <End Role="DonVis" EntitySet="DonVis" />
+            <End Role="VanBanDens" EntitySet="VanBanDens" />
+          </AssociationSet>
+          <AssociationSet Name="FK__VanBanDis__MaDon__5441852A" Association="Self.FK__VanBanDis__MaDon__5441852A">
+            <End Role="DonVis" EntitySet="DonVis" />
+            <End Role="VanBanDis" EntitySet="VanBanDis" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="vanthu_databaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DonVi_Nam">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MaDonVi" Type="Int32" />
+          <Property Name="Nam" Type="Int32" />
+          <NavigationProperty Name="DonVis" Relationship="Self.FK__DonVi_Nam__MaDon__571DF1D5" FromRole="DonVi_Nam" ToRole="DonVis" />
+          <NavigationProperty Name="Nams" Relationship="Self.FK__DonVi_Nam__Nam__5812160E" FromRole="DonVi_Nam" ToRole="Nams" />
+        </EntityType>
+        <EntityType Name="DonVis">
+          <Key>
+            <PropertyRef Name="MaDonVi" />
+          </Key>
+          <Property Name="MaDonVi" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenDonVi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="DonVi_Nam" Relationship="Self.FK__DonVi_Nam__MaDon__571DF1D5" FromRole="DonVis" ToRole="DonVi_Nam" />
+          <NavigationProperty Name="VanBanDens" Relationship="Self.FK__VanBanDen__MaDon__5165187F" FromRole="DonVis" ToRole="VanBanDens" />
+          <NavigationProperty Name="VanBanDis" Relationship="Self.FK__VanBanDis__MaDon__5441852A" FromRole="DonVis" ToRole="VanBanDis" />
+        </EntityType>
+        <EntityType Name="Nams">
+          <Key>
+            <PropertyRef Name="Nam" />
+          </Key>
+          <Property Name="Nam" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DonVi_Nam" Relationship="Self.FK__DonVi_Nam__Nam__5812160E" FromRole="Nams" ToRole="DonVi_Nam" />
+        </EntityType>
+        <EntityType Name="VanBanDens">
+          <Key>
+            <PropertyRef Name="SoDen" />
+          </Key>
+          <Property Name="SoDen" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SoKyHieu" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="TrichYeuNoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="LoaiVanBan" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CoQuanBanHanh" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="NgayBanHanh" Type="DateTime" Precision="0" />
+          <Property Name="NgayDen" Type="DateTime" Precision="0" />
+          <Property Name="NgayXuLy" Type="DateTime" Precision="0" />
+          <Property Name="NoiNhan" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="NguoiNhan" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DoMat" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="DoKhan" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TepTuLieu" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="MaDonVi" Type="Int32" />
+          <NavigationProperty Name="DonVis" Relationship="Self.FK__VanBanDen__MaDon__5165187F" FromRole="VanBanDens" ToRole="DonVis" />
+        </EntityType>
+        <EntityType Name="VanBanDis">
+          <Key>
+            <PropertyRef Name="SoDi" />
+          </Key>
+          <Property Name="SoDi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SoKyHieu" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="TrichYeuNoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="LoaiVanBan" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="DonViBanHanh" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="NgayBanHanh" Type="DateTime" Precision="0" />
+          <Property Name="NoiNhan" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="NgayXuLy" Type="DateTime" Precision="0" />
+          <Property Name="TepTuLieu" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="MaDonVi" Type="Int32" />
+          <NavigationProperty Name="DonVis" Relationship="Self.FK__VanBanDis__MaDon__5441852A" FromRole="VanBanDis" ToRole="DonVis" />
+        </EntityType>
+        <Association Name="FK__DonVi_Nam__MaDon__571DF1D5">
+          <End Role="DonVis" Type="Self.DonVis" Multiplicity="0..1" />
+          <End Role="DonVi_Nam" Type="Self.DonVi_Nam" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DonVis">
+              <PropertyRef Name="MaDonVi" />
+            </Principal>
+            <Dependent Role="DonVi_Nam">
+              <PropertyRef Name="MaDonVi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DonVi_Nam__Nam__5812160E">
+          <End Role="Nams" Type="Self.Nams" Multiplicity="0..1" />
+          <End Role="DonVi_Nam" Type="Self.DonVi_Nam" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nams">
+              <PropertyRef Name="Nam" />
+            </Principal>
+            <Dependent Role="DonVi_Nam">
+              <PropertyRef Name="Nam" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__VanBanDen__MaDon__5165187F">
+          <End Role="DonVis" Type="Self.DonVis" Multiplicity="0..1" />
+          <End Role="VanBanDens" Type="Self.VanBanDens" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DonVis">
+              <PropertyRef Name="MaDonVi" />
+            </Principal>
+            <Dependent Role="VanBanDens">
+              <PropertyRef Name="MaDonVi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__VanBanDis__MaDon__5441852A">
+          <End Role="DonVis" Type="Self.DonVis" Multiplicity="0..1" />
+          <End Role="VanBanDis" Type="Self.VanBanDis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DonVis">
+              <PropertyRef Name="MaDonVi" />
+            </Principal>
+            <Dependent Role="VanBanDis">
+              <PropertyRef Name="MaDonVi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="VanThuDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DonVi_Nam" EntityType="Self.DonVi_Nam" />
+          <EntitySet Name="DonVis" EntityType="Self.DonVis" />
+          <EntitySet Name="Nams" EntityType="Self.Nams" />
+          <EntitySet Name="VanBanDens" EntityType="Self.VanBanDens" />
+          <EntitySet Name="VanBanDis" EntityType="Self.VanBanDis" />
+          <AssociationSet Name="FK__DonVi_Nam__MaDon__571DF1D5" Association="Self.FK__DonVi_Nam__MaDon__571DF1D5">
+            <End Role="DonVis" EntitySet="DonVis" />
+            <End Role="DonVi_Nam" EntitySet="DonVi_Nam" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DonVi_Nam__Nam__5812160E" Association="Self.FK__DonVi_Nam__Nam__5812160E">
+            <End Role="Nams" EntitySet="Nams" />
+            <End Role="DonVi_Nam" EntitySet="DonVi_Nam" />
+          </AssociationSet>
+          <AssociationSet Name="FK__VanBanDen__MaDon__5165187F" Association="Self.FK__VanBanDen__MaDon__5165187F">
+            <End Role="DonVis" EntitySet="DonVis" />
+            <End Role="VanBanDens" EntitySet="VanBanDens" />
+          </AssociationSet>
+          <AssociationSet Name="FK__VanBanDis__MaDon__5441852A" Association="Self.FK__VanBanDis__MaDon__5441852A">
+            <End Role="DonVis" EntitySet="DonVis" />
+            <End Role="VanBanDis" EntitySet="VanBanDis" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="vanthu_databaseModelStoreContainer" CdmEntityContainer="VanThuDBEntities">
+          <EntitySetMapping Name="DonVi_Nam">
+            <EntityTypeMapping TypeName="vanthu_databaseModel.DonVi_Nam">
+              <MappingFragment StoreEntitySet="DonVi_Nam">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="MaDonVi" ColumnName="MaDonVi" />
+                <ScalarProperty Name="Nam" ColumnName="Nam" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DonVis">
+            <EntityTypeMapping TypeName="vanthu_databaseModel.DonVis">
+              <MappingFragment StoreEntitySet="DonVis">
+                <ScalarProperty Name="MaDonVi" ColumnName="MaDonVi" />
+                <ScalarProperty Name="TenDonVi" ColumnName="TenDonVi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Nams">
+            <EntityTypeMapping TypeName="vanthu_databaseModel.Nams">
+              <MappingFragment StoreEntitySet="Nams">
+                <ScalarProperty Name="Nam" ColumnName="Nam" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VanBanDens">
+            <EntityTypeMapping TypeName="vanthu_databaseModel.VanBanDens">
+              <MappingFragment StoreEntitySet="VanBanDens">
+                <ScalarProperty Name="SoDen" ColumnName="SoDen" />
+                <ScalarProperty Name="SoKyHieu" ColumnName="SoKyHieu" />
+                <ScalarProperty Name="TrichYeuNoiDung" ColumnName="TrichYeuNoiDung" />
+                <ScalarProperty Name="LoaiVanBan" ColumnName="LoaiVanBan" />
+                <ScalarProperty Name="CoQuanBanHanh" ColumnName="CoQuanBanHanh" />
+                <ScalarProperty Name="NgayBanHanh" ColumnName="NgayBanHanh" />
+                <ScalarProperty Name="NgayDen" ColumnName="NgayDen" />
+                <ScalarProperty Name="NgayXuLy" ColumnName="NgayXuLy" />
+                <ScalarProperty Name="NoiNhan" ColumnName="NoiNhan" />
+                <ScalarProperty Name="NguoiNhan" ColumnName="NguoiNhan" />
+                <ScalarProperty Name="DoMat" ColumnName="DoMat" />
+                <ScalarProperty Name="DoKhan" ColumnName="DoKhan" />
+                <ScalarProperty Name="TepTuLieu" ColumnName="TepTuLieu" />
+                <ScalarProperty Name="MaDonVi" ColumnName="MaDonVi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VanBanDis">
+            <EntityTypeMapping TypeName="vanthu_databaseModel.VanBanDis">
+              <MappingFragment StoreEntitySet="VanBanDis">
+                <ScalarProperty Name="SoDi" ColumnName="SoDi" />
+                <ScalarProperty Name="SoKyHieu" ColumnName="SoKyHieu" />
+                <ScalarProperty Name="TrichYeuNoiDung" ColumnName="TrichYeuNoiDung" />
+                <ScalarProperty Name="LoaiVanBan" ColumnName="LoaiVanBan" />
+                <ScalarProperty Name="DonViBanHanh" ColumnName="DonViBanHanh" />
+                <ScalarProperty Name="NgayBanHanh" ColumnName="NgayBanHanh" />
+                <ScalarProperty Name="NoiNhan" ColumnName="NoiNhan" />
+                <ScalarProperty Name="NgayXuLy" ColumnName="NgayXuLy" />
+                <ScalarProperty Name="TepTuLieu" ColumnName="TepTuLieu" />
+                <ScalarProperty Name="MaDonVi" ColumnName="MaDonVi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

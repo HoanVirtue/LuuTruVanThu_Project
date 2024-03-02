@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e2e4495a60624c8883218a9f54237a52" Name="Diagram1">
+        <EntityTypeShape EntityType="vanthu_databaseModel.DonVi_Nam" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="vanthu_databaseModel.DonVis" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="vanthu_databaseModel.Nams" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="vanthu_databaseModel.VanBanDens" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="vanthu_databaseModel.VanBanDis" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <AssociationConnector Association="vanthu_databaseModel.FK__DonVi_Nam__MaDon__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="vanthu_databaseModel.FK__DonVi_Nam__Nam__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="vanthu_databaseModel.FK__VanBanDen__MaDon__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="vanthu_databaseModel.FK__VanBanDis__MaDon__5441852A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
