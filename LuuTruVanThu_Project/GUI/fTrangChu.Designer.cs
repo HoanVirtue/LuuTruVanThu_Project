@@ -107,7 +107,6 @@ namespace LuuTruVanThu_Project.GUI
             this.label1.TabIndex = 16;
             this.label1.Text = "PHẦN MỀM VĂN THƯ, LƯU TRỮ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // hệThốngToolStripMenuItem
             // 
@@ -119,7 +118,7 @@ namespace LuuTruVanThu_Project.GUI
             this.hệThốngToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.hệThốngToolStripMenuItem.Name = "hệThốngToolStripMenuItem";
             this.hệThốngToolStripMenuItem.Padding = new System.Windows.Forms.Padding(50, 20, 5, 0);
-            this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(175, 56);
+            this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(174, 56);
             this.hệThốngToolStripMenuItem.Text = "Hệ thống";
             this.hệThốngToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             // 
@@ -132,6 +131,7 @@ namespace LuuTruVanThu_Project.GUI
             this.vănBảnĐếnToolStripMenuItem.Padding = new System.Windows.Forms.Padding(0);
             this.vănBảnĐếnToolStripMenuItem.Size = new System.Drawing.Size(270, 36);
             this.vănBảnĐếnToolStripMenuItem.Text = "Văn bản đến";
+            this.vănBảnĐếnToolStripMenuItem.Click += new System.EventHandler(this.vănBảnĐếnToolStripMenuItem_Click);
             // 
             // vănBảnĐiToolStripMenuItem
             // 
@@ -142,6 +142,7 @@ namespace LuuTruVanThu_Project.GUI
             this.vănBảnĐiToolStripMenuItem.Padding = new System.Windows.Forms.Padding(0);
             this.vănBảnĐiToolStripMenuItem.Size = new System.Drawing.Size(270, 36);
             this.vănBảnĐiToolStripMenuItem.Text = "Văn bản đi";
+            this.vănBảnĐiToolStripMenuItem.Click += new System.EventHandler(this.vănBảnĐiToolStripMenuItem_Click);
             // 
             // thoátToolStripMenuItem
             // 
@@ -165,7 +166,7 @@ namespace LuuTruVanThu_Project.GUI
             this.côngCụToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.côngCụToolStripMenuItem.Name = "côngCụToolStripMenuItem";
             this.côngCụToolStripMenuItem.Padding = new System.Windows.Forms.Padding(50, 20, 5, 0);
-            this.côngCụToolStripMenuItem.Size = new System.Drawing.Size(163, 56);
+            this.côngCụToolStripMenuItem.Size = new System.Drawing.Size(162, 56);
             this.côngCụToolStripMenuItem.Text = "Công cụ";
             // 
             // tìmKiếmToolStripMenuItem
@@ -186,6 +187,7 @@ namespace LuuTruVanThu_Project.GUI
             this.tìmKiếmVănBảnĐếnToolStripMenuItem.Name = "tìmKiếmVănBảnĐếnToolStripMenuItem";
             this.tìmKiếmVănBảnĐếnToolStripMenuItem.Size = new System.Drawing.Size(270, 40);
             this.tìmKiếmVănBảnĐếnToolStripMenuItem.Text = "Văn bản đến";
+            this.tìmKiếmVănBảnĐếnToolStripMenuItem.Click += new System.EventHandler(this.tìmKiếmVănBảnĐếnToolStripMenuItem_Click);
             // 
             // tìmKiếmVănBảnĐiToolStripMenuItem
             // 
@@ -195,6 +197,7 @@ namespace LuuTruVanThu_Project.GUI
             this.tìmKiếmVănBảnĐiToolStripMenuItem.Padding = new System.Windows.Forms.Padding(0, 8, 0, 1);
             this.tìmKiếmVănBảnĐiToolStripMenuItem.Size = new System.Drawing.Size(270, 45);
             this.tìmKiếmVănBảnĐiToolStripMenuItem.Text = "Văn bản đi";
+            this.tìmKiếmVănBảnĐiToolStripMenuItem.Click += new System.EventHandler(this.tìmKiếmVănBảnĐiToolStripMenuItem_Click);
             // 
             // tổngHợpToolStripMenuItem
             // 
@@ -203,11 +206,13 @@ namespace LuuTruVanThu_Project.GUI
             this.tổngHợpToolStripMenuItem.Name = "tổngHợpToolStripMenuItem";
             this.tổngHợpToolStripMenuItem.Size = new System.Drawing.Size(270, 40);
             this.tổngHợpToolStripMenuItem.Text = "Tổng hợp";
+            this.tổngHợpToolStripMenuItem.Click += new System.EventHandler(this.tổngHợpToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.menuStrip1.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hệThốngToolStripMenuItem,

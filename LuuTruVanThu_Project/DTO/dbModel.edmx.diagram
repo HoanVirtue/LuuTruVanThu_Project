@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="e2e4495a60624c8883218a9f54237a52" Name="Diagram1">
+      <Diagram DiagramId="e2e4495a60624c8883218a9f54237a52" Name="Diagram1" ZoomLevel="86">
         <EntityTypeShape EntityType="vanthu_databaseModel.DonVi_Nam" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
         <EntityTypeShape EntityType="vanthu_databaseModel.DonVis" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
         <EntityTypeShape EntityType="vanthu_databaseModel.Nams" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
