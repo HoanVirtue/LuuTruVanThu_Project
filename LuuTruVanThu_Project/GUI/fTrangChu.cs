@@ -11,6 +11,7 @@ namespace LuuTruVanThu_Project.GUI
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
         private void OpenForm(int name)
         {
@@ -63,5 +64,7 @@ namespace LuuTruVanThu_Project.GUI
         {
             OpenForm(TrangChuConstant.FORM_TONGHOP);
         }
+=======
+>>>>>>> main
     }
 }
