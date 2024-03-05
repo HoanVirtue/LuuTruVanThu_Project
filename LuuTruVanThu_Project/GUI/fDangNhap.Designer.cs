@@ -29,40 +29,39 @@ namespace LuuTruVanThu_Project.GUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnThoat = new System.Windows.Forms.Button();
-            this.btnChon = new System.Windows.Forms.Button();
+            this.btCancel = new System.Windows.Forms.Button();
+            this.btOK = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbbDonVi = new System.Windows.Forms.ComboBox();
-            this.txbNam = new System.Windows.Forms.TextBox();
+            this.cbDonVi = new System.Windows.Forms.ComboBox();
+            this.tvNam = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnThoat
+            // btCancel
             // 
-            this.btnThoat.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnThoat.Location = new System.Drawing.Point(549, 363);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(145, 58);
-            this.btnThoat.TabIndex = 21;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btCancel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCancel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btCancel.Location = new System.Drawing.Point(549, 363);
+            this.btCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btCancel.Name = "btCancel";
+            this.btCancel.Size = new System.Drawing.Size(145, 58);
+            this.btCancel.TabIndex = 21;
+            this.btCancel.Text = "Cancel";
+            this.btCancel.UseVisualStyleBackColor = false;
             // 
-            // btnChon
+            // btOK
             // 
-            this.btnChon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChon.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnChon.Location = new System.Drawing.Point(383, 363);
-            this.btnChon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnChon.Name = "btnChon";
-            this.btnChon.Size = new System.Drawing.Size(145, 58);
-            this.btnChon.TabIndex = 20;
-            this.btnChon.Text = "Chọn";
-            this.btnChon.UseVisualStyleBackColor = true;
-            this.btnChon.Click += new System.EventHandler(this.btnChon_Click);
+            this.btOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btOK.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btOK.Location = new System.Drawing.Point(383, 363);
+            this.btOK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btOK.Name = "btOK";
+            this.btOK.Size = new System.Drawing.Size(145, 58);
+            this.btOK.TabIndex = 20;
+            this.btOK.Text = "OK";
+            this.btOK.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -84,12 +83,12 @@ namespace LuuTruVanThu_Project.GUI
             this.label1.TabIndex = 18;
             this.label1.Text = "Đơn vị";
             // 
-            // cbbDonVi
+            // cbDonVi
             // 
-            this.cbbDonVi.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cbbDonVi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbDonVi.FormattingEnabled = true;
-            this.cbbDonVi.Items.AddRange(new object[] {
+            this.cbDonVi.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cbDonVi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDonVi.FormattingEnabled = true;
+            this.cbDonVi.Items.AddRange(new object[] {
             "Viện kiểm sát nhân dân tỉnh Phú Yên",
             "Viện kiểm sát nhân dân Thị xã Đông Hòa",
             "Viện kiểm sát nhân dân huyện Đồng Xuân",
@@ -100,21 +99,21 @@ namespace LuuTruVanThu_Project.GUI
             "Viện kiểm sát nhân dân huyện Tây Hòa",
             "Viện kiểm sát nhân dân huyện Tuy An",
             "Viện kiểm sát nhân dân Thành phố Tuy Hòa"});
-            this.cbbDonVi.Location = new System.Drawing.Point(267, 184);
-            this.cbbDonVi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cbbDonVi.Name = "cbbDonVi";
-            this.cbbDonVi.Size = new System.Drawing.Size(427, 30);
-            this.cbbDonVi.TabIndex = 17;
+            this.cbDonVi.Location = new System.Drawing.Point(267, 184);
+            this.cbDonVi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbDonVi.Name = "cbDonVi";
+            this.cbDonVi.Size = new System.Drawing.Size(427, 30);
+            this.cbDonVi.TabIndex = 17;
             // 
-            // txbNam
+            // tvNam
             // 
-            this.txbNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbNam.Location = new System.Drawing.Point(267, 257);
-            this.txbNam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txbNam.Name = "txbNam";
-            this.txbNam.Size = new System.Drawing.Size(110, 31);
-            this.txbNam.TabIndex = 16;
-            this.txbNam.Text = "2024";
+            this.tvNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tvNam.Location = new System.Drawing.Point(267, 257);
+            this.tvNam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tvNam.Name = "tvNam";
+            this.tvNam.Size = new System.Drawing.Size(110, 31);
+            this.tvNam.TabIndex = 16;
+            this.tvNam.Text = "2024";
             // 
             // label3
             // 
@@ -133,16 +132,14 @@ namespace LuuTruVanThu_Project.GUI
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(832, 478);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.btnChon);
+            this.Controls.Add(this.btCancel);
+            this.Controls.Add(this.btOK);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbbDonVi);
-            this.Controls.Add(this.txbNam);
+            this.Controls.Add(this.cbDonVi);
+            this.Controls.Add(this.tvNam);
             this.Name = "fDangNhap";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fDangNhap";
-            this.Load += new System.EventHandler(this.fDangNhap_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,12 +147,12 @@ namespace LuuTruVanThu_Project.GUI
 
         #endregion
 
-        private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.Button btnChon;
+        private System.Windows.Forms.Button btCancel;
+        private System.Windows.Forms.Button btOK;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbbDonVi;
-        private System.Windows.Forms.TextBox txbNam;
+        private System.Windows.Forms.ComboBox cbDonVi;
+        private System.Windows.Forms.TextBox tvNam;
         private System.Windows.Forms.Label label3;
     }
 }

@@ -39,7 +39,7 @@ namespace LuuTruVanThu_Project.GUI
             this.NgayBanHanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.txbSoKyHieu = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -120,7 +120,7 @@ namespace LuuTruVanThu_Project.GUI
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.txbSoKyHieu);
+            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -146,14 +146,14 @@ namespace LuuTruVanThu_Project.GUI
             this.button1.Text = "Tìm kiếm";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // txbSoKyHieu
+            // textBox1
             // 
-            this.txbSoKyHieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSoKyHieu.Location = new System.Drawing.Point(411, 62);
-            this.txbSoKyHieu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txbSoKyHieu.Name = "txbSoKyHieu";
-            this.txbSoKyHieu.Size = new System.Drawing.Size(340, 35);
-            this.txbSoKyHieu.TabIndex = 7;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(411, 62);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(340, 35);
+            this.textBox1.TabIndex = 7;
             // 
             // dateTimePicker1
             // 
@@ -216,7 +216,7 @@ namespace LuuTruVanThu_Project.GUI
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayBanHanh;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txbSoKyHieu;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
