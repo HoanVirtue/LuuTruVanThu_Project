@@ -48,7 +48,7 @@ namespace LuuTruVanThu_Project.GUI
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(145, 58);
             this.btCancel.TabIndex = 21;
-            this.btCancel.Text = "Cancel";
+            this.btCancel.Text = "Thoát";
             this.btCancel.UseVisualStyleBackColor = false;
             // 
             // btOK
@@ -60,8 +60,9 @@ namespace LuuTruVanThu_Project.GUI
             this.btOK.Name = "btOK";
             this.btOK.Size = new System.Drawing.Size(145, 58);
             this.btOK.TabIndex = 20;
-            this.btOK.Text = "OK";
+            this.btOK.Text = "Chọn";
             this.btOK.UseVisualStyleBackColor = true;
+            this.btOK.Click += new System.EventHandler(this.btOK_Click);
             // 
             // label2
             // 
@@ -139,7 +140,9 @@ namespace LuuTruVanThu_Project.GUI
             this.Controls.Add(this.cbDonVi);
             this.Controls.Add(this.tvNam);
             this.Name = "fDangNhap";
-            this.Text = "fDangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Đăng nhập";
+            this.Load += new System.EventHandler(this.fDangNhap_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

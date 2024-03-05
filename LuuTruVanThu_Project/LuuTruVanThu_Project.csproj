@@ -55,7 +55,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constant\TrangChuConstant.cs" />
     <Compile Include="DAO\DonViDAO.cs" />
+    <Compile Include="Data\DonViNamData.cs" />
+    <Compile Include="Data\VanBanDenData.cs" />
     <Compile Include="DTO\dbModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -128,6 +131,8 @@
     <Compile Include="GUI\fVanBanDi.Designer.cs">
       <DependentUpon>fVanBanDi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Message\DangNhapMessage.cs" />
+    <Compile Include="Message\TitleMessage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\fDangNhap.resx">

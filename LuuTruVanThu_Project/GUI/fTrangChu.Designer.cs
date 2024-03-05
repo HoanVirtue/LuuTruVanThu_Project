@@ -55,10 +55,10 @@ namespace LuuTruVanThu_Project.GUI
             this.pbLogo.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.pbLogo.ErrorImage = null;
             this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
-            this.pbLogo.Location = new System.Drawing.Point(376, 264);
+            this.pbLogo.Location = new System.Drawing.Point(423, 330);
             this.pbLogo.Margin = new System.Windows.Forms.Padding(1, 2, 2, 2);
             this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(254, 202);
+            this.pbLogo.Size = new System.Drawing.Size(286, 252);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLogo.TabIndex = 19;
             this.pbLogo.TabStop = false;
@@ -70,10 +70,10 @@ namespace LuuTruVanThu_Project.GUI
             this.lbNam.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.lbNam.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNam.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lbNam.Location = new System.Drawing.Point(398, 525);
+            this.lbNam.Location = new System.Drawing.Point(448, 656);
             this.lbNam.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNam.Name = "lbNam";
-            this.lbNam.Size = new System.Drawing.Size(220, 46);
+            this.lbNam.Size = new System.Drawing.Size(248, 58);
             this.lbNam.TabIndex = 18;
             this.lbNam.Text = "NĂM 2023";
             this.lbNam.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -85,10 +85,10 @@ namespace LuuTruVanThu_Project.GUI
             this.lbDiaDiem.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.lbDiaDiem.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDiaDiem.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lbDiaDiem.Location = new System.Drawing.Point(130, 468);
+            this.lbDiaDiem.Location = new System.Drawing.Point(146, 585);
             this.lbDiaDiem.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDiaDiem.Name = "lbDiaDiem";
-            this.lbDiaDiem.Size = new System.Drawing.Size(773, 46);
+            this.lbDiaDiem.Size = new System.Drawing.Size(870, 58);
             this.lbDiaDiem.TabIndex = 17;
             this.lbDiaDiem.Text = "VIỆN KIỂM SÁT NHÂN DÂN TỈNH PHÚ YÊN";
             this.lbDiaDiem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -100,10 +100,10 @@ namespace LuuTruVanThu_Project.GUI
             this.lbTieuDe.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.lbTieuDe.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTieuDe.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lbTieuDe.Location = new System.Drawing.Point(148, 196);
+            this.lbTieuDe.Location = new System.Drawing.Point(166, 245);
             this.lbTieuDe.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTieuDe.Name = "lbTieuDe";
-            this.lbTieuDe.Size = new System.Drawing.Size(714, 54);
+            this.lbTieuDe.Size = new System.Drawing.Size(803, 68);
             this.lbTieuDe.TabIndex = 16;
             this.lbTieuDe.Text = "PHẦN MỀM VĂN THƯ, LƯU TRỮ";
             this.lbTieuDe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -118,7 +118,7 @@ namespace LuuTruVanThu_Project.GUI
             this.msHeThong.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.msHeThong.Name = "msHeThong";
             this.msHeThong.Padding = new System.Windows.Forms.Padding(50, 20, 5, 0);
-            this.msHeThong.Size = new System.Drawing.Size(153, 52);
+            this.msHeThong.Size = new System.Drawing.Size(174, 56);
             this.msHeThong.Text = "Hệ thống";
             this.msHeThong.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             // 
@@ -129,8 +129,9 @@ namespace LuuTruVanThu_Project.GUI
             this.msVanBanDen.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.msVanBanDen.Name = "msVanBanDen";
             this.msVanBanDen.Padding = new System.Windows.Forms.Padding(0);
-            this.msVanBanDen.Size = new System.Drawing.Size(224, 30);
+            this.msVanBanDen.Size = new System.Drawing.Size(270, 36);
             this.msVanBanDen.Text = "Văn bản đến";
+            this.msVanBanDen.Click += new System.EventHandler(this.msVanBanDen_Click);
             // 
             // msVanBanDi
             // 
@@ -139,8 +140,9 @@ namespace LuuTruVanThu_Project.GUI
             this.msVanBanDi.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.msVanBanDi.Name = "msVanBanDi";
             this.msVanBanDi.Padding = new System.Windows.Forms.Padding(0);
-            this.msVanBanDi.Size = new System.Drawing.Size(224, 30);
+            this.msVanBanDi.Size = new System.Drawing.Size(270, 36);
             this.msVanBanDi.Text = "Văn bản đi";
+            this.msVanBanDi.Click += new System.EventHandler(this.msVanBanDi_Click);
             // 
             // msThoat
             // 
@@ -149,10 +151,11 @@ namespace LuuTruVanThu_Project.GUI
             this.msThoat.ImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.msThoat.Name = "msThoat";
             this.msThoat.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
-            this.msThoat.Size = new System.Drawing.Size(224, 37);
+            this.msThoat.Size = new System.Drawing.Size(270, 43);
             this.msThoat.Text = "Thoát";
             this.msThoat.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.msThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.msThoat.Click += new System.EventHandler(this.msThoat_Click);
             // 
             // msCongCu
             // 
@@ -164,7 +167,7 @@ namespace LuuTruVanThu_Project.GUI
             this.msCongCu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.msCongCu.Name = "msCongCu";
             this.msCongCu.Padding = new System.Windows.Forms.Padding(50, 20, 5, 0);
-            this.msCongCu.Size = new System.Drawing.Size(143, 52);
+            this.msCongCu.Size = new System.Drawing.Size(162, 56);
             this.msCongCu.Text = "Công cụ";
             // 
             // msTimKiem
@@ -175,7 +178,7 @@ namespace LuuTruVanThu_Project.GUI
             this.msTimKiem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.msTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("msTimKiem.Image")));
             this.msTimKiem.Name = "msTimKiem";
-            this.msTimKiem.Size = new System.Drawing.Size(224, 32);
+            this.msTimKiem.Size = new System.Drawing.Size(270, 40);
             this.msTimKiem.Text = "Tìm kiếm";
             // 
             // msTimKiemVanBanDen
@@ -183,8 +186,9 @@ namespace LuuTruVanThu_Project.GUI
             this.msTimKiemVanBanDen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.msTimKiemVanBanDen.Image = ((System.Drawing.Image)(resources.GetObject("msTimKiemVanBanDen.Image")));
             this.msTimKiemVanBanDen.Name = "msTimKiemVanBanDen";
-            this.msTimKiemVanBanDen.Size = new System.Drawing.Size(224, 32);
+            this.msTimKiemVanBanDen.Size = new System.Drawing.Size(270, 40);
             this.msTimKiemVanBanDen.Text = "Văn bản đến";
+            this.msTimKiemVanBanDen.Click += new System.EventHandler(this.msTimKiemVanBanDen_Click);
             // 
             // msTimKiemVanBanDi
             // 
@@ -192,21 +196,24 @@ namespace LuuTruVanThu_Project.GUI
             this.msTimKiemVanBanDi.Image = ((System.Drawing.Image)(resources.GetObject("msTimKiemVanBanDi.Image")));
             this.msTimKiemVanBanDi.Name = "msTimKiemVanBanDi";
             this.msTimKiemVanBanDi.Padding = new System.Windows.Forms.Padding(0, 8, 0, 1);
-            this.msTimKiemVanBanDi.Size = new System.Drawing.Size(224, 39);
+            this.msTimKiemVanBanDi.Size = new System.Drawing.Size(270, 45);
             this.msTimKiemVanBanDi.Text = "Văn bản đi";
+            this.msTimKiemVanBanDi.Click += new System.EventHandler(this.msTimKiemVanBanDi_Click);
             // 
             // msTongHop
             // 
             this.msTongHop.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.msTongHop.Image = ((System.Drawing.Image)(resources.GetObject("msTongHop.Image")));
             this.msTongHop.Name = "msTongHop";
-            this.msTongHop.Size = new System.Drawing.Size(224, 32);
+            this.msTongHop.Size = new System.Drawing.Size(270, 40);
             this.msTongHop.Text = "Tổng hợp";
+            this.msTongHop.Click += new System.EventHandler(this.msTongHop_Click);
             // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.menuStrip1.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msHeThong,
@@ -214,16 +221,16 @@ namespace LuuTruVanThu_Project.GUI
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1002, 56);
+            this.menuStrip1.Size = new System.Drawing.Size(1127, 60);
             this.menuStrip1.TabIndex = 15;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // fTrangChu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1002, 675);
+            this.ClientSize = new System.Drawing.Size(1127, 844);
             this.Controls.Add(this.pbLogo);
             this.Controls.Add(this.lbNam);
             this.Controls.Add(this.lbDiaDiem);
@@ -231,7 +238,7 @@ namespace LuuTruVanThu_Project.GUI
             this.Controls.Add(this.menuStrip1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fTrangChu";
-            this.Text = "fTrangChu";
+            this.Text = "Trang chủ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.menuStrip1.ResumeLayout(false);
