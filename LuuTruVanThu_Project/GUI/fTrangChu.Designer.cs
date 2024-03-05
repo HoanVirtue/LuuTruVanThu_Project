@@ -97,6 +97,18 @@ namespace LuuTruVanThu_Project.GUI
             // 
             this.lbTieuDe.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+<<<<<<< HEAD
+            this.label1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label1.Location = new System.Drawing.Point(167, 245);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(803, 67);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "PHẦN MỀM VĂN THƯ, LƯU TRỮ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+=======
             this.lbTieuDe.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.lbTieuDe.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTieuDe.ForeColor = System.Drawing.SystemColors.HotTrack;
@@ -107,9 +119,23 @@ namespace LuuTruVanThu_Project.GUI
             this.lbTieuDe.TabIndex = 16;
             this.lbTieuDe.Text = "PHẦN MỀM VĂN THƯ, LƯU TRỮ";
             this.lbTieuDe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+>>>>>>> main
             // 
             // msHeThong
             // 
+<<<<<<< HEAD
+            this.hệThốngToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.vănBảnĐếnToolStripMenuItem,
+            this.vănBảnĐiToolStripMenuItem,
+            this.thoátToolStripMenuItem});
+            this.hệThốngToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hệThốngToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.hệThốngToolStripMenuItem.Name = "hệThốngToolStripMenuItem";
+            this.hệThốngToolStripMenuItem.Padding = new System.Windows.Forms.Padding(50, 20, 5, 0);
+            this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(174, 56);
+            this.hệThốngToolStripMenuItem.Text = "Hệ thống";
+            this.hệThốngToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+=======
             this.msHeThong.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msVanBanDen,
             this.msVanBanDi,
@@ -121,9 +147,20 @@ namespace LuuTruVanThu_Project.GUI
             this.msHeThong.Size = new System.Drawing.Size(153, 52);
             this.msHeThong.Text = "Hệ thống";
             this.msHeThong.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+>>>>>>> main
             // 
             // msVanBanDen
             // 
+<<<<<<< HEAD
+            this.vănBảnĐếnToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.vănBảnĐếnToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("vănBảnĐếnToolStripMenuItem.Image")));
+            this.vănBảnĐếnToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.vănBảnĐếnToolStripMenuItem.Name = "vănBảnĐếnToolStripMenuItem";
+            this.vănBảnĐếnToolStripMenuItem.Padding = new System.Windows.Forms.Padding(0);
+            this.vănBảnĐếnToolStripMenuItem.Size = new System.Drawing.Size(270, 36);
+            this.vănBảnĐếnToolStripMenuItem.Text = "Văn bản đến";
+            this.vănBảnĐếnToolStripMenuItem.Click += new System.EventHandler(this.vănBảnĐếnToolStripMenuItem_Click);
+=======
             this.msVanBanDen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.msVanBanDen.Image = ((System.Drawing.Image)(resources.GetObject("msVanBanDen.Image")));
             this.msVanBanDen.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -131,9 +168,20 @@ namespace LuuTruVanThu_Project.GUI
             this.msVanBanDen.Padding = new System.Windows.Forms.Padding(0);
             this.msVanBanDen.Size = new System.Drawing.Size(224, 30);
             this.msVanBanDen.Text = "Văn bản đến";
+>>>>>>> main
             // 
             // msVanBanDi
             // 
+<<<<<<< HEAD
+            this.vănBảnĐiToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.vănBảnĐiToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("vănBảnĐiToolStripMenuItem.Image")));
+            this.vănBảnĐiToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.vănBảnĐiToolStripMenuItem.Name = "vănBảnĐiToolStripMenuItem";
+            this.vănBảnĐiToolStripMenuItem.Padding = new System.Windows.Forms.Padding(0);
+            this.vănBảnĐiToolStripMenuItem.Size = new System.Drawing.Size(270, 36);
+            this.vănBảnĐiToolStripMenuItem.Text = "Văn bản đi";
+            this.vănBảnĐiToolStripMenuItem.Click += new System.EventHandler(this.vănBảnĐiToolStripMenuItem_Click);
+=======
             this.msVanBanDi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.msVanBanDi.Image = ((System.Drawing.Image)(resources.GetObject("msVanBanDi.Image")));
             this.msVanBanDi.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -141,6 +189,7 @@ namespace LuuTruVanThu_Project.GUI
             this.msVanBanDi.Padding = new System.Windows.Forms.Padding(0);
             this.msVanBanDi.Size = new System.Drawing.Size(224, 30);
             this.msVanBanDi.Text = "Văn bản đi";
+>>>>>>> main
             // 
             // msThoat
             // 
@@ -156,6 +205,18 @@ namespace LuuTruVanThu_Project.GUI
             // 
             // msCongCu
             // 
+<<<<<<< HEAD
+            this.côngCụToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tìmKiếmToolStripMenuItem,
+            this.tổngHợpToolStripMenuItem});
+            this.côngCụToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.côngCụToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.côngCụToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.côngCụToolStripMenuItem.Name = "côngCụToolStripMenuItem";
+            this.côngCụToolStripMenuItem.Padding = new System.Windows.Forms.Padding(50, 20, 5, 0);
+            this.côngCụToolStripMenuItem.Size = new System.Drawing.Size(162, 56);
+            this.côngCụToolStripMenuItem.Text = "Công cụ";
+=======
             this.msCongCu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msTimKiem,
             this.msTongHop});
@@ -166,6 +227,7 @@ namespace LuuTruVanThu_Project.GUI
             this.msCongCu.Padding = new System.Windows.Forms.Padding(50, 20, 5, 0);
             this.msCongCu.Size = new System.Drawing.Size(143, 52);
             this.msCongCu.Text = "Công cụ";
+>>>>>>> main
             // 
             // msTimKiem
             // 
@@ -180,33 +242,62 @@ namespace LuuTruVanThu_Project.GUI
             // 
             // msTimKiemVanBanDen
             // 
+<<<<<<< HEAD
+            this.tìmKiếmVănBảnĐếnToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tìmKiếmVănBảnĐếnToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("tìmKiếmVănBảnĐếnToolStripMenuItem.Image")));
+            this.tìmKiếmVănBảnĐếnToolStripMenuItem.Name = "tìmKiếmVănBảnĐếnToolStripMenuItem";
+            this.tìmKiếmVănBảnĐếnToolStripMenuItem.Size = new System.Drawing.Size(270, 40);
+            this.tìmKiếmVănBảnĐếnToolStripMenuItem.Text = "Văn bản đến";
+            this.tìmKiếmVănBảnĐếnToolStripMenuItem.Click += new System.EventHandler(this.tìmKiếmVănBảnĐếnToolStripMenuItem_Click);
+=======
             this.msTimKiemVanBanDen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.msTimKiemVanBanDen.Image = ((System.Drawing.Image)(resources.GetObject("msTimKiemVanBanDen.Image")));
             this.msTimKiemVanBanDen.Name = "msTimKiemVanBanDen";
             this.msTimKiemVanBanDen.Size = new System.Drawing.Size(224, 32);
             this.msTimKiemVanBanDen.Text = "Văn bản đến";
+>>>>>>> main
             // 
             // msTimKiemVanBanDi
             // 
+<<<<<<< HEAD
+            this.tìmKiếmVănBảnĐiToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tìmKiếmVănBảnĐiToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("tìmKiếmVănBảnĐiToolStripMenuItem.Image")));
+            this.tìmKiếmVănBảnĐiToolStripMenuItem.Name = "tìmKiếmVănBảnĐiToolStripMenuItem";
+            this.tìmKiếmVănBảnĐiToolStripMenuItem.Padding = new System.Windows.Forms.Padding(0, 8, 0, 1);
+            this.tìmKiếmVănBảnĐiToolStripMenuItem.Size = new System.Drawing.Size(270, 45);
+            this.tìmKiếmVănBảnĐiToolStripMenuItem.Text = "Văn bản đi";
+            this.tìmKiếmVănBảnĐiToolStripMenuItem.Click += new System.EventHandler(this.tìmKiếmVănBảnĐiToolStripMenuItem_Click);
+=======
             this.msTimKiemVanBanDi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.msTimKiemVanBanDi.Image = ((System.Drawing.Image)(resources.GetObject("msTimKiemVanBanDi.Image")));
             this.msTimKiemVanBanDi.Name = "msTimKiemVanBanDi";
             this.msTimKiemVanBanDi.Padding = new System.Windows.Forms.Padding(0, 8, 0, 1);
             this.msTimKiemVanBanDi.Size = new System.Drawing.Size(224, 39);
             this.msTimKiemVanBanDi.Text = "Văn bản đi";
+>>>>>>> main
             // 
             // msTongHop
             // 
+<<<<<<< HEAD
+            this.tổngHợpToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tổngHợpToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("tổngHợpToolStripMenuItem.Image")));
+            this.tổngHợpToolStripMenuItem.Name = "tổngHợpToolStripMenuItem";
+            this.tổngHợpToolStripMenuItem.Size = new System.Drawing.Size(270, 40);
+            this.tổngHợpToolStripMenuItem.Text = "Tổng hợp";
+            this.tổngHợpToolStripMenuItem.Click += new System.EventHandler(this.tổngHợpToolStripMenuItem_Click);
+=======
             this.msTongHop.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.msTongHop.Image = ((System.Drawing.Image)(resources.GetObject("msTongHop.Image")));
             this.msTongHop.Name = "msTongHop";
             this.msTongHop.Size = new System.Drawing.Size(224, 32);
             this.msTongHop.Text = "Tổng hợp";
+>>>>>>> main
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.menuStrip1.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msHeThong,
