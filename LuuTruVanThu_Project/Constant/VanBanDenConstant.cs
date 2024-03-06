@@ -7,5 +7,6 @@
         public const int ADD_FAIL = 2;
         public const int UPDATE_SUCCESS = 3;
         public const int UPDATE_FAIL = 4;
+        public const int NOT_EXIST_SODEN = 5;
     }
 }

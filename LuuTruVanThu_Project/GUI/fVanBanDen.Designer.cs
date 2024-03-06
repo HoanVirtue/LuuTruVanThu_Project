@@ -31,9 +31,9 @@ namespace LuuTruVanThu_Project.GUI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fVanBanDen));
             this.gbChucNang = new System.Windows.Forms.GroupBox();
-            this.btThoat = new System.Windows.Forms.Button();
+            this.btNew = new System.Windows.Forms.Button();
             this.btLuu = new System.Windows.Forms.Button();
-            this.btDanhSachVanBan = new System.Windows.Forms.Button();
+            this.btnDocTuLieu = new System.Windows.Forms.Button();
             this.btThemMoi = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btTuLieuCongVan = new System.Windows.Forms.Button();
@@ -46,6 +46,7 @@ namespace LuuTruVanThu_Project.GUI
             this.lbSao = new System.Windows.Forms.Label();
             this.dtpNgayDen = new System.Windows.Forms.DateTimePicker();
             this.dtpNgayBanHanh = new System.Windows.Forms.DateTimePicker();
+            this.cbbNoiNhan = new System.Windows.Forms.ComboBox();
             this.cbbDoMat = new System.Windows.Forms.ComboBox();
             this.cbbDoKhan = new System.Windows.Forms.ComboBox();
             this.dtpNgayXuLy = new System.Windows.Forms.DateTimePicker();
@@ -63,6 +64,7 @@ namespace LuuTruVanThu_Project.GUI
             this.lbSoDen = new System.Windows.Forms.Label();
             this.lbLoaiVanBan = new System.Windows.Forms.Label();
             this.gbThongTin = new System.Windows.Forms.GroupBox();
+            this.tbTuLieu = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -70,7 +72,6 @@ namespace LuuTruVanThu_Project.GUI
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.dgvDanhSach = new System.Windows.Forms.DataGridView();
-            this.cbbNoiNhan = new System.Windows.Forms.ComboBox();
             this.gbChucNang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbThongTin.SuspendLayout();
@@ -81,9 +82,9 @@ namespace LuuTruVanThu_Project.GUI
             // 
             this.gbChucNang.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gbChucNang.Controls.Add(this.btThoat);
+            this.gbChucNang.Controls.Add(this.btNew);
             this.gbChucNang.Controls.Add(this.btLuu);
-            this.gbChucNang.Controls.Add(this.btDanhSachVanBan);
+            this.gbChucNang.Controls.Add(this.btnDocTuLieu);
             this.gbChucNang.Controls.Add(this.btThemMoi);
             this.gbChucNang.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbChucNang.ForeColor = System.Drawing.SystemColors.HotTrack;
@@ -96,16 +97,17 @@ namespace LuuTruVanThu_Project.GUI
             this.gbChucNang.TabStop = false;
             this.gbChucNang.Text = "Chức năng";
             // 
-            // btThoat
+            // btNew
             // 
-            this.btThoat.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThoat.Location = new System.Drawing.Point(1599, 38);
-            this.btThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(251, 65);
-            this.btThoat.TabIndex = 9;
-            this.btThoat.Text = "Thoát";
-            this.btThoat.UseVisualStyleBackColor = true;
+            this.btNew.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btNew.Location = new System.Drawing.Point(1599, 38);
+            this.btNew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btNew.Name = "btNew";
+            this.btNew.Size = new System.Drawing.Size(251, 65);
+            this.btNew.TabIndex = 9;
+            this.btNew.Text = "Làm mới";
+            this.btNew.UseVisualStyleBackColor = true;
+            this.btNew.Click += new System.EventHandler(this.btNew_Click);
             // 
             // btLuu
             // 
@@ -117,17 +119,19 @@ namespace LuuTruVanThu_Project.GUI
             this.btLuu.TabIndex = 8;
             this.btLuu.Text = "Lưu";
             this.btLuu.UseVisualStyleBackColor = true;
+            this.btLuu.Click += new System.EventHandler(this.btLuu_Click);
             // 
-            // btDanhSachVanBan
+            // btnDocTuLieu
             // 
-            this.btDanhSachVanBan.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDanhSachVanBan.Location = new System.Drawing.Point(63, 42);
-            this.btDanhSachVanBan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btDanhSachVanBan.Name = "btDanhSachVanBan";
-            this.btDanhSachVanBan.Size = new System.Drawing.Size(278, 60);
-            this.btDanhSachVanBan.TabIndex = 7;
-            this.btDanhSachVanBan.Text = "Danh sách văn bản";
-            this.btDanhSachVanBan.UseVisualStyleBackColor = true;
+            this.btnDocTuLieu.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDocTuLieu.Location = new System.Drawing.Point(63, 42);
+            this.btnDocTuLieu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDocTuLieu.Name = "btnDocTuLieu";
+            this.btnDocTuLieu.Size = new System.Drawing.Size(278, 60);
+            this.btnDocTuLieu.TabIndex = 7;
+            this.btnDocTuLieu.Text = "Đọc tư liệu";
+            this.btnDocTuLieu.UseVisualStyleBackColor = true;
+            this.btnDocTuLieu.Click += new System.EventHandler(this.btnDocTuLieu_Click);
             // 
             // btThemMoi
             // 
@@ -163,6 +167,7 @@ namespace LuuTruVanThu_Project.GUI
             this.btTuLieuCongVan.TabIndex = 60;
             this.btTuLieuCongVan.Text = "Tư liệu công văn";
             this.btTuLieuCongVan.UseVisualStyleBackColor = true;
+            this.btTuLieuCongVan.Click += new System.EventHandler(this.btTuLieuCongVan_Click);
             // 
             // cbCheckDuLieu
             // 
@@ -192,7 +197,7 @@ namespace LuuTruVanThu_Project.GUI
             this.rtbTrichYeu.Location = new System.Drawing.Point(871, 205);
             this.rtbTrichYeu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rtbTrichYeu.Name = "rtbTrichYeu";
-            this.rtbTrichYeu.Size = new System.Drawing.Size(977, 172);
+            this.rtbTrichYeu.Size = new System.Drawing.Size(998, 172);
             this.rtbTrichYeu.TabIndex = 57;
             this.rtbTrichYeu.Text = "";
             // 
@@ -240,7 +245,7 @@ namespace LuuTruVanThu_Project.GUI
             this.dtpNgayDen.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayDen.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgayDen.Location = new System.Drawing.Point(279, 198);
-            this.dtpNgayDen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpNgayDen.Margin = new System.Windows.Forms.Padding(4);
             this.dtpNgayDen.Name = "dtpNgayDen";
             this.dtpNgayDen.Size = new System.Drawing.Size(340, 35);
             this.dtpNgayDen.TabIndex = 48;
@@ -250,17 +255,27 @@ namespace LuuTruVanThu_Project.GUI
             this.dtpNgayBanHanh.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayBanHanh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgayBanHanh.Location = new System.Drawing.Point(1529, 96);
-            this.dtpNgayBanHanh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpNgayBanHanh.Margin = new System.Windows.Forms.Padding(4);
             this.dtpNgayBanHanh.Name = "dtpNgayBanHanh";
             this.dtpNgayBanHanh.Size = new System.Drawing.Size(340, 35);
             this.dtpNgayBanHanh.TabIndex = 47;
+            // 
+            // cbbNoiNhan
+            // 
+            this.cbbNoiNhan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbNoiNhan.FormattingEnabled = true;
+            this.cbbNoiNhan.Location = new System.Drawing.Point(871, 94);
+            this.cbbNoiNhan.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbNoiNhan.Name = "cbbNoiNhan";
+            this.cbbNoiNhan.Size = new System.Drawing.Size(343, 35);
+            this.cbbNoiNhan.TabIndex = 46;
             // 
             // cbbDoMat
             // 
             this.cbbDoMat.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbDoMat.FormattingEnabled = true;
             this.cbbDoMat.Location = new System.Drawing.Point(871, 49);
-            this.cbbDoMat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbDoMat.Margin = new System.Windows.Forms.Padding(4);
             this.cbbDoMat.Name = "cbbDoMat";
             this.cbbDoMat.Size = new System.Drawing.Size(343, 35);
             this.cbbDoMat.TabIndex = 45;
@@ -269,13 +284,8 @@ namespace LuuTruVanThu_Project.GUI
             // 
             this.cbbDoKhan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbDoKhan.FormattingEnabled = true;
-            this.cbbDoKhan.Items.AddRange(new object[] {
-            "Hỏa tốc",
-            "Thượng khẩn",
-            "Khẩn",
-            "Có tư liệu khác"});
-            this.cbbDoKhan.Location = new System.Drawing.Point(871, 98);
-            this.cbbDoKhan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbDoKhan.Location = new System.Drawing.Point(1529, 44);
+            this.cbbDoKhan.Margin = new System.Windows.Forms.Padding(4);
             this.cbbDoKhan.Name = "cbbDoKhan";
             this.cbbDoKhan.Size = new System.Drawing.Size(343, 35);
             this.cbbDoKhan.TabIndex = 44;
@@ -285,7 +295,7 @@ namespace LuuTruVanThu_Project.GUI
             this.dtpNgayXuLy.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayXuLy.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgayXuLy.Location = new System.Drawing.Point(279, 250);
-            this.dtpNgayXuLy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpNgayXuLy.Margin = new System.Windows.Forms.Padding(4);
             this.dtpNgayXuLy.Name = "dtpNgayXuLy";
             this.dtpNgayXuLy.Size = new System.Drawing.Size(340, 35);
             this.dtpNgayXuLy.TabIndex = 49;
@@ -294,12 +304,8 @@ namespace LuuTruVanThu_Project.GUI
             // 
             this.cbbLoaiVanBan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbLoaiVanBan.FormattingEnabled = true;
-            this.cbbLoaiVanBan.Items.AddRange(new object[] {
-            "Đơn",
-            "Gửi đích danh",
-            "Loại khác"});
             this.cbbLoaiVanBan.Location = new System.Drawing.Point(871, 150);
-            this.cbbLoaiVanBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbLoaiVanBan.Margin = new System.Windows.Forms.Padding(4);
             this.cbbLoaiVanBan.Name = "cbbLoaiVanBan";
             this.cbbLoaiVanBan.Size = new System.Drawing.Size(343, 35);
             this.cbbLoaiVanBan.TabIndex = 43;
@@ -309,7 +315,7 @@ namespace LuuTruVanThu_Project.GUI
             this.lbNoiNhan.AutoSize = true;
             this.lbNoiNhan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNoiNhan.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lbNoiNhan.Location = new System.Drawing.Point(1306, 49);
+            this.lbNoiNhan.Location = new System.Drawing.Point(676, 102);
             this.lbNoiNhan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNoiNhan.Name = "lbNoiNhan";
             this.lbNoiNhan.Size = new System.Drawing.Size(112, 27);
@@ -333,7 +339,7 @@ namespace LuuTruVanThu_Project.GUI
             this.lbDoKhan.AutoSize = true;
             this.lbDoKhan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDoKhan.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lbDoKhan.Location = new System.Drawing.Point(672, 106);
+            this.lbDoKhan.Location = new System.Drawing.Point(1306, 52);
             this.lbDoKhan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDoKhan.Name = "lbDoKhan";
             this.lbDoKhan.Size = new System.Drawing.Size(102, 27);
@@ -357,7 +363,7 @@ namespace LuuTruVanThu_Project.GUI
             this.lbNguoiNhan.AutoSize = true;
             this.lbNguoiNhan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNguoiNhan.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lbNguoiNhan.Location = new System.Drawing.Point(1306, 152);
+            this.lbNguoiNhan.Location = new System.Drawing.Point(1313, 152);
             this.lbNguoiNhan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNguoiNhan.Name = "lbNguoiNhan";
             this.lbNguoiNhan.Size = new System.Drawing.Size(142, 27);
@@ -452,7 +458,7 @@ namespace LuuTruVanThu_Project.GUI
             // 
             this.gbThongTin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gbThongTin.Controls.Add(this.cbbNoiNhan);
+            this.gbThongTin.Controls.Add(this.tbTuLieu);
             this.gbThongTin.Controls.Add(this.label19);
             this.gbThongTin.Controls.Add(this.label18);
             this.gbThongTin.Controls.Add(this.label17);
@@ -471,6 +477,7 @@ namespace LuuTruVanThu_Project.GUI
             this.gbThongTin.Controls.Add(this.dtpNgayXuLy);
             this.gbThongTin.Controls.Add(this.dtpNgayDen);
             this.gbThongTin.Controls.Add(this.dtpNgayBanHanh);
+            this.gbThongTin.Controls.Add(this.cbbNoiNhan);
             this.gbThongTin.Controls.Add(this.cbbDoMat);
             this.gbThongTin.Controls.Add(this.cbbDoKhan);
             this.gbThongTin.Controls.Add(this.cbbLoaiVanBan);
@@ -497,12 +504,23 @@ namespace LuuTruVanThu_Project.GUI
             this.gbThongTin.TabStop = false;
             this.gbThongTin.Text = "Thông tin văn bản";
             // 
+            // tbTuLieu
+            // 
+            this.tbTuLieu.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTuLieu.Location = new System.Drawing.Point(407, 359);
+            this.tbTuLieu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbTuLieu.Name = "tbTuLieu";
+            this.tbTuLieu.Size = new System.Drawing.Size(163, 35);
+            this.tbTuLieu.TabIndex = 72;
+            this.tbTuLieu.Visible = false;
+            this.tbTuLieu.TextChanged += new System.EventHandler(this.tbTuLieu_TextChanged);
+            // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Red;
-            this.label19.Location = new System.Drawing.Point(1414, 49);
+            this.label19.Location = new System.Drawing.Point(784, 102);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(37, 27);
@@ -581,21 +599,7 @@ namespace LuuTruVanThu_Project.GUI
             this.dgvDanhSach.RowTemplate.Height = 28;
             this.dgvDanhSach.Size = new System.Drawing.Size(1884, 240);
             this.dgvDanhSach.TabIndex = 4;
-            // 
-            // cbbNoiNhan
-            // 
-            this.cbbNoiNhan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbNoiNhan.FormattingEnabled = true;
-            this.cbbNoiNhan.Items.AddRange(new object[] {
-            "Hỏa tốc",
-            "Thượng khẩn",
-            "Khẩn",
-            "Có tư liệu khác"});
-            this.cbbNoiNhan.Location = new System.Drawing.Point(1526, 41);
-            this.cbbNoiNhan.Margin = new System.Windows.Forms.Padding(4);
-            this.cbbNoiNhan.Name = "cbbNoiNhan";
-            this.cbbNoiNhan.Size = new System.Drawing.Size(343, 35);
-            this.cbbNoiNhan.TabIndex = 72;
+            this.dgvDanhSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSach_CellClick);
             // 
             // fVanBanDen
             // 
@@ -623,9 +627,9 @@ namespace LuuTruVanThu_Project.GUI
         #endregion
 
         private System.Windows.Forms.GroupBox gbChucNang;
-        private System.Windows.Forms.Button btThoat;
+        private System.Windows.Forms.Button btNew;
         private System.Windows.Forms.Button btLuu;
-        private System.Windows.Forms.Button btDanhSachVanBan;
+        private System.Windows.Forms.Button btnDocTuLieu;
         private System.Windows.Forms.Button btThemMoi;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btTuLieuCongVan;
@@ -638,6 +642,7 @@ namespace LuuTruVanThu_Project.GUI
         private System.Windows.Forms.Label lbSao;
         private System.Windows.Forms.DateTimePicker dtpNgayDen;
         private System.Windows.Forms.DateTimePicker dtpNgayBanHanh;
+        private System.Windows.Forms.ComboBox cbbNoiNhan;
         private System.Windows.Forms.ComboBox cbbDoMat;
         private System.Windows.Forms.ComboBox cbbDoKhan;
         private System.Windows.Forms.DateTimePicker dtpNgayXuLy;
@@ -662,6 +667,6 @@ namespace LuuTruVanThu_Project.GUI
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox cbbNoiNhan;
+        private System.Windows.Forms.TextBox tbTuLieu;
     }
 }

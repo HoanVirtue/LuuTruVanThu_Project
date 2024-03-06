@@ -56,7 +56,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constant\TrangChuConstant.cs" />
+    <Compile Include="Constant\VanBanDenConstant.cs" />
     <Compile Include="DAO\DonViDAO.cs" />
+    <Compile Include="DAO\VanBanDenDAO.cs" />
     <Compile Include="Data\DonViNamData.cs" />
     <Compile Include="Data\VanBanDenData.cs" />
     <Compile Include="DTO\dbModel.Context.cs">
@@ -80,6 +82,7 @@
     <Compile Include="DTO\DonVi_Nam.cs">
       <DependentUpon>dbModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DTO\ModelView\VanBanDenModelView.cs" />
     <Compile Include="DTO\Nams.cs">
       <DependentUpon>dbModel.tt</DependentUpon>
     </Compile>
@@ -133,6 +136,7 @@
     </Compile>
     <Compile Include="Message\DangNhapMessage.cs" />
     <Compile Include="Message\TitleMessage.cs" />
+    <Compile Include="Message\VanBanDenMessage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\fDangNhap.resx">
@@ -200,6 +204,9 @@
       <DependentUpon>dbModel.edmx</DependentUpon>
       <LastGenOutput>dbModel.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TepTuLieuCongVan\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

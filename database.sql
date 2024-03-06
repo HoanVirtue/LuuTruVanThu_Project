@@ -1,4 +1,4 @@
-create database vanthu_database;
+﻿create database vanthu_database;
 
 use vanthu_database;
 
@@ -51,3 +51,9 @@ create table VanBanDis
 	TepTuLieu varchar(255),
 	MaDonVi int references DonVis(MaDonVi)
 );
+
+select * from VanBanDens
+
+insert into VanBanDens(SoDen, SoKyHieu, TrichYeuNoiDung, LoaiVanBan, CoQuanBanHanh, NgayBanHanh, NgayDen, NgayXuLy, NoiNhan, NguoiNhan, DoMat, DoKhan, MaDonVi)
+values
+('1', 'AA1', 'abc xyz', N'Đơn', 'Cơ quan A', GETDATE(), GETDATE(), GETDATE(), 'Noi A', N'Nguyễn Văn A', N'Tuyệt mật', N'Hỏa tốc', 1)
