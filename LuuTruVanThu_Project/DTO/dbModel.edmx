@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="vanthu_databaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="vanthu_databaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="DonVi_Nam">
           <Key>
             <PropertyRef Name="Id" />
@@ -42,7 +42,7 @@
           <Property Name="NguoiNhan" Type="nvarchar" MaxLength="255" />
           <Property Name="DoMat" Type="nvarchar" MaxLength="100" />
           <Property Name="DoKhan" Type="nvarchar" MaxLength="100" />
-          <Property Name="TepTuLieu" Type="varchar" MaxLength="255" />
+          <Property Name="TepTuLieu" Type="nvarchar" MaxLength="255" />
           <Property Name="MaDonVi" Type="int" />
         </EntityType>
         <EntityType Name="VanBanDis">
@@ -131,8 +131,7 @@
             <End Role="VanBanDis" EntitySet="VanBanDis" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="vanthu_databaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -179,7 +178,7 @@
           <Property Name="NguoiNhan" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="DoMat" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="DoKhan" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="TepTuLieu" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="TepTuLieu" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="MaDonVi" Type="Int32" />
           <NavigationProperty Name="DonVis" Relationship="Self.FK__VanBanDen__MaDon__5165187F" FromRole="VanBanDens" ToRole="DonVis" />
         </EntityType>
