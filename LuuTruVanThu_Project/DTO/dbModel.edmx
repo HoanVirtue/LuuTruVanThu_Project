@@ -57,7 +57,7 @@
           <Property Name="NgayBanHanh" Type="date" />
           <Property Name="NoiNhan" Type="nvarchar" MaxLength="255" />
           <Property Name="NgayXuLy" Type="date" />
-          <Property Name="TepTuLieu" Type="varchar" MaxLength="255" />
+          <Property Name="TepTuLieu" Type="nvarchar" MaxLength="255" />
           <Property Name="MaDonVi" Type="int" />
         </EntityType>
         <Association Name="FK__DonVi_Nam__MaDon__571DF1D5">
@@ -194,7 +194,7 @@
           <Property Name="NgayBanHanh" Type="DateTime" Precision="0" />
           <Property Name="NoiNhan" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="NgayXuLy" Type="DateTime" Precision="0" />
-          <Property Name="TepTuLieu" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="TepTuLieu" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="MaDonVi" Type="Int32" />
           <NavigationProperty Name="DonVis" Relationship="Self.FK__VanBanDis__MaDon__5441852A" FromRole="VanBanDis" ToRole="DonVis" />
         </EntityType>

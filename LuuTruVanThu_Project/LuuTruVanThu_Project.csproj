@@ -56,10 +56,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constant\TrangChuConstant.cs" />
+    <Compile Include="Constant\VanBanDiConstant.cs" />
     <Compile Include="Constant\VanBanDenConstant.cs" />
     <Compile Include="DAO\DonViDAO.cs" />
     <Compile Include="DAO\VanBanDenDAO.cs" />
+    <Compile Include="DAO\VanBanDiDAO.cs" />
     <Compile Include="Data\DonViNamData.cs" />
+    <Compile Include="Data\VanBanDiData.cs" />
     <Compile Include="Data\VanBanDenData.cs" />
     <Compile Include="DTO\dbModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -83,6 +86,7 @@
       <DependentUpon>dbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DTO\ModelView\VanBanDenModelView.cs" />
+    <Compile Include="DTO\ModelView\VanBanDiModelView.cs" />
     <Compile Include="DTO\Nams.cs">
       <DependentUpon>dbModel.tt</DependentUpon>
     </Compile>
@@ -136,6 +140,7 @@
     </Compile>
     <Compile Include="Message\DangNhapMessage.cs" />
     <Compile Include="Message\TitleMessage.cs" />
+    <Compile Include="Message\VanBanDiMessage.cs" />
     <Compile Include="Message\VanBanDenMessage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -206,7 +211,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="TepTuLieuCongVan\" />
+    <Folder Include="TepDuLieuCongVanDi\" />
+    <Folder Include="TepTuLieuCongVanDen\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
