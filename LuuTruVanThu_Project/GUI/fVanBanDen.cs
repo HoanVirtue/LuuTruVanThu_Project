@@ -15,7 +15,7 @@ namespace LuuTruVanThu_Project.GUI
     public partial class fVanBanDen : Form
     {
         private List<VanBanDenModelView> listVanBan;
-        string installedPath = Path.GetFullPath(@"../../TepTuLieuCongVan");
+        string installedPath = Path.GetFullPath(@"../../TepTuLieuCongVanDen");
         private int position = -1;
         #region Methods
         public fVanBanDen()

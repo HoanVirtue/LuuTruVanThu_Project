@@ -34,7 +34,7 @@ create table VanBanDens
 	NguoiNhan nvarchar(255),
 	DoMat nvarchar(100),
 	DoKhan nvarchar(100),
-	TepTuLieu varchar(255),
+	TepTuLieu nvarchar(255),
 	MaDonVi int references DonVis(MaDonVi)
 );
 
@@ -48,7 +48,7 @@ create table VanBanDis
 	NgayBanHanh date,
 	NoiNhan nvarchar(255),
 	NgayXuLy date,
-	TepTuLieu varchar(255),
+	TepTuLieu nvarchar(255),
 	MaDonVi int references DonVis(MaDonVi)
 );
 
