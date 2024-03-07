@@ -129,8 +129,9 @@ namespace LuuTruVanThu_Project.GUI
             this.msVanBanDen.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.msVanBanDen.Name = "msVanBanDen";
             this.msVanBanDen.Padding = new System.Windows.Forms.Padding(0);
-            this.msVanBanDen.Size = new System.Drawing.Size(252, 36);
+            this.msVanBanDen.Size = new System.Drawing.Size(270, 36);
             this.msVanBanDen.Text = "Văn bản đến";
+            this.msVanBanDen.Click += new System.EventHandler(this.vănBảnĐếnToolStripMenuItem_Click);
             // 
             // msVanBanDi
             // 
@@ -139,8 +140,9 @@ namespace LuuTruVanThu_Project.GUI
             this.msVanBanDi.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.msVanBanDi.Name = "msVanBanDi";
             this.msVanBanDi.Padding = new System.Windows.Forms.Padding(0);
-            this.msVanBanDi.Size = new System.Drawing.Size(252, 36);
+            this.msVanBanDi.Size = new System.Drawing.Size(270, 36);
             this.msVanBanDi.Text = "Văn bản đi";
+            this.msVanBanDi.Click += new System.EventHandler(this.vănBảnĐiToolStripMenuItem_Click);
             // 
             // msThoat
             // 
@@ -149,10 +151,11 @@ namespace LuuTruVanThu_Project.GUI
             this.msThoat.ImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.msThoat.Name = "msThoat";
             this.msThoat.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
-            this.msThoat.Size = new System.Drawing.Size(252, 43);
+            this.msThoat.Size = new System.Drawing.Size(270, 43);
             this.msThoat.Text = "Thoát";
             this.msThoat.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.msThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.msThoat.Click += new System.EventHandler(this.msThoat_Click);
             // 
             // msCongCu
             // 
@@ -175,7 +178,7 @@ namespace LuuTruVanThu_Project.GUI
             this.msTimKiem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.msTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("msTimKiem.Image")));
             this.msTimKiem.Name = "msTimKiem";
-            this.msTimKiem.Size = new System.Drawing.Size(222, 40);
+            this.msTimKiem.Size = new System.Drawing.Size(270, 40);
             this.msTimKiem.Text = "Tìm kiếm";
             // 
             // msTimKiemVanBanDen
@@ -183,8 +186,9 @@ namespace LuuTruVanThu_Project.GUI
             this.msTimKiemVanBanDen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.msTimKiemVanBanDen.Image = ((System.Drawing.Image)(resources.GetObject("msTimKiemVanBanDen.Image")));
             this.msTimKiemVanBanDen.Name = "msTimKiemVanBanDen";
-            this.msTimKiemVanBanDen.Size = new System.Drawing.Size(252, 40);
+            this.msTimKiemVanBanDen.Size = new System.Drawing.Size(270, 40);
             this.msTimKiemVanBanDen.Text = "Văn bản đến";
+            this.msTimKiemVanBanDen.Click += new System.EventHandler(this.tìmKiếmVănBảnĐếnToolStripMenuItem_Click);
             // 
             // msTimKiemVanBanDi
             // 
@@ -192,16 +196,18 @@ namespace LuuTruVanThu_Project.GUI
             this.msTimKiemVanBanDi.Image = ((System.Drawing.Image)(resources.GetObject("msTimKiemVanBanDi.Image")));
             this.msTimKiemVanBanDi.Name = "msTimKiemVanBanDi";
             this.msTimKiemVanBanDi.Padding = new System.Windows.Forms.Padding(0, 8, 0, 1);
-            this.msTimKiemVanBanDi.Size = new System.Drawing.Size(252, 45);
+            this.msTimKiemVanBanDi.Size = new System.Drawing.Size(270, 45);
             this.msTimKiemVanBanDi.Text = "Văn bản đi";
+            this.msTimKiemVanBanDi.Click += new System.EventHandler(this.tìmKiếmVănBảnĐiToolStripMenuItem_Click);
             // 
             // msTongHop
             // 
             this.msTongHop.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.msTongHop.Image = ((System.Drawing.Image)(resources.GetObject("msTongHop.Image")));
             this.msTongHop.Name = "msTongHop";
-            this.msTongHop.Size = new System.Drawing.Size(222, 40);
+            this.msTongHop.Size = new System.Drawing.Size(270, 40);
             this.msTongHop.Text = "Tổng hợp";
+            this.msTongHop.Click += new System.EventHandler(this.tổngHợpToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 

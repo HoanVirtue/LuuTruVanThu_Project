@@ -21,12 +21,6 @@ namespace LuuTruVanThu_Project.GUI
         public fVanBanDen()
         {
             InitializeComponent();
-            DonViNamData.donVi = new DonVi_Nam()
-            {
-                Id = 1,
-                MaDonVi = 1,
-                Nam = 2024
-            };
         }
 
         private void LoadForm()

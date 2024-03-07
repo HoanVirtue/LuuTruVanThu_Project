@@ -14,7 +14,7 @@ namespace LuuTruVanThu_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fTongHop());
+            Application.Run(new fDangNhap());
         }
     }
 }
