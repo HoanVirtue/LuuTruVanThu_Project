@@ -74,14 +74,15 @@ namespace LuuTruVanThu_Project.GUI
             dgvDanhSach.DataSource = listVanBan;
         }
 
-        private void ValidateData()
+        private bool ValidateData()
         {
             if (string.IsNullOrEmpty(tbSoDen.Text) || string.IsNullOrEmpty(tbKyHieu.Text)
                 || string.IsNullOrEmpty(tbCoQuanBanHanh.Text))
             {
                 ShowMessage(VanBanDenMessage.VALIDATE_DATA, TitleMessage.WARNING_MESSAGE);
-                return;
+                return false;
             }
+            return true;
         }
 
         private VanBanDens GetDataForm()
@@ -153,7 +154,8 @@ namespace LuuTruVanThu_Project.GUI
         private void AddData()
         {
             VanBanDens vanBan = GetDataForm();
-            ValidateData();
+            if (!ValidateData())
+                return;
             int result = VanBanDenDAO.Instance.AddData(vanBan);
             if (result == VanBanDenConstant.EXIST_SODEN)
             {

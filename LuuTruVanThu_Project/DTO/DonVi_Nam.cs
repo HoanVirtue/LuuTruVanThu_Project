@@ -15,7 +15,7 @@ namespace LuuTruVanThu_Project.DTO
     public partial class DonVi_Nam
     {
         public int Id { get; set; }
-        public Nullable<int> MaDonVi { get; set; }
+        public int MaDonVi { get; set; }
         public Nullable<int> Nam { get; set; }
     
         public virtual DonVis DonVis { get; set; }

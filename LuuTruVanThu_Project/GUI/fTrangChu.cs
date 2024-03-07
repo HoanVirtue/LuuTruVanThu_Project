@@ -1,4 +1,6 @@
 ﻿using LuuTruVanThu_Project.Constant;
+using LuuTruVanThu_Project.DAO;
+using LuuTruVanThu_Project.Data;
 using System;
 using System.Windows.Forms;
 
@@ -67,6 +69,12 @@ namespace LuuTruVanThu_Project.GUI
         private void msThoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void fTrangChu_Load(object sender, EventArgs e)
+        {
+            lbDonVi.Text = DonViDAO.Instance.GetDataById(DonViNamData.donVi.MaDonVi).TenDonVi;
+            lbNam.Text = "Năm " + DonViNamData.donVi.Nam.ToString();
         }
     }
 }
