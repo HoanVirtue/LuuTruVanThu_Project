@@ -110,5 +110,17 @@ namespace LuuTruVanThu_Project.DAO
                                           TepTuLieu = string.IsNullOrEmpty(v.TepTuLieu) ? "Không có" : v.TepTuLieu,
                                       }).ToList();
         }
+
+        public List<TongHopVanBanDiModelView> SynthesizeData(DateTime ngayBatDau, DateTime ngayKetThuc)
+        {
+            return _context.VanBanDis.Where(v => v.MaDonVi == DonViNamData.donVi.MaDonVi && v.NgayBanHanh >= ngayBatDau && v.NgayBanHanh <= ngayKetThuc)
+                                      .Select(v => new TongHopVanBanDiModelView
+                                      {
+                                          SoDi = v.SoDi,
+                                          SoKyHieu = v.SoKyHieu,
+                                          TrichYeuNoiDung = v.TrichYeuNoiDung,
+                                          NgayBanHanh = v.NgayBanHanh,
+                                      }).ToList();
+        }
     }
 }
