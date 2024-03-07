@@ -250,7 +250,7 @@ namespace LuuTruVanThu_Project.GUI
         private void btTuLieuCongVan_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = @"All Files|*.docx;*.doc;*.pdf*.xls|Word File (.docx ,.doc)|*.docx;*.doc|PDF (.pdf)|*.pdf";
+            openFileDialog.Filter = @"All Files|*.txt;*.docx;*.doc;*.pdf*.xls;*.xlsx;*.pptx;*.ppt|Text File (.txt)|*.txt|Word File (.docx ,.doc)|*.docx;*.doc|PDF (.pdf)|*.pdf|Spreadsheet (.xls ,.xlsx)|  *.xls ;*.xlsx|Presentation (.pptx ,.ppt)|*.pptx;*.ppt";
             openFileDialog.ShowDialog();
             if (openFileDialog.FileName != "")
             {
