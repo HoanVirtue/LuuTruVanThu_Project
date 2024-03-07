@@ -21,12 +21,6 @@ namespace LuuTruVanThu_Project.GUI
         public fVanBanDi()
         {
             InitializeComponent();
-            DonViNamData.donVi = new DonVi_Nam()
-            {
-                Id = 1,
-                MaDonVi = 1,
-                Nam = 2024
-            };
         }
 
         private void LoadForm()
@@ -56,6 +50,10 @@ namespace LuuTruVanThu_Project.GUI
             dgvDanhSach.Columns[6].DataPropertyName = "NoiNhan";
             dgvDanhSach.Columns[7].DataPropertyName = "NgayXuLy";
             dgvDanhSach.Columns[8].DataPropertyName = "TepTuLieu";
+
+            dgvDanhSach.Columns[2].Width = 200;
+            dgvDanhSach.Columns[5].Width = 150;
+            dgvDanhSach.Columns[8].Width = 200;
         }
         private static void ShowMessage(string message, string title = null)
         {

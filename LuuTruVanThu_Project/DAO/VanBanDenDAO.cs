@@ -101,5 +101,26 @@ namespace LuuTruVanThu_Project.DAO
                 }
             }
         }
+
+        public List<VanBanDenModelView> GetData(string soKyHieu, DateTime ngayBanHanh)
+        {
+            return _context.VanBanDens.Where(v => v.MaDonVi == DonViNamData.donVi.MaDonVi && v.SoKyHieu.ToLower().Contains(soKyHieu.ToLower()) && v.NgayBanHanh == ngayBanHanh)
+                                      .Select(v => new VanBanDenModelView
+                                      {
+                                          SoDen = v.SoDen,
+                                          SoKyHieu = v.SoKyHieu,
+                                          TrichYeuNoiDung = v.TrichYeuNoiDung,
+                                          LoaiVanBan = v.LoaiVanBan,
+                                          CoQuanBanHanh = v.CoQuanBanHanh,
+                                          NgayBanHanh = v.NgayBanHanh,
+                                          NgayDen = v.NgayDen,
+                                          NgayXuLy = v.NgayXuLy,
+                                          NoiNhan = v.NoiNhan,
+                                          NguoiNhan = v.NguoiNhan,
+                                          DoMat = v.DoMat,
+                                          DoKhan = v.DoKhan,
+                                          TepTuLieu = string.IsNullOrEmpty(v.TepTuLieu) ? "Không có" : v.TepTuLieu,
+                                      }).ToList();
+        }
     }
 }

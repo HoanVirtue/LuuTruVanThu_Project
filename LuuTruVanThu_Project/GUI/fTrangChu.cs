@@ -63,5 +63,10 @@ namespace LuuTruVanThu_Project.GUI
         {
             OpenForm(TrangChuConstant.FORM_TONGHOP);
         }
+
+        private void msThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
