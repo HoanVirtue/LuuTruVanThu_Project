@@ -1,6 +1,4 @@
 ﻿using LuuTruVanThu_Project.DAO;
-using LuuTruVanThu_Project.Data;
-using LuuTruVanThu_Project.DTO;
 using LuuTruVanThu_Project.DTO.ModelView;
 using System;
 using System.Collections.Generic;
@@ -15,12 +13,6 @@ namespace LuuTruVanThu_Project.GUI
         public fTongHop()
         {
             InitializeComponent();
-            DonViNamData.donVi = new DonVi_Nam()
-            {
-                Id = 1,
-                MaDonVi = 1,
-                Nam = 2024
-            };
         }
 
         private void LoadDSVanBanDi(DateTime ngayBatDau, DateTime ngayKetThuc)
