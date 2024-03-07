@@ -36,6 +36,9 @@ namespace LuuTruVanThu_Project.DAO
             }
             return false;
         }
-
+        public DonVis GetDataById(int donVi)
+        {
+            return _context.DonVis.Find(donVi);
+        }
     }
 }
