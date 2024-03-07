@@ -85,6 +85,8 @@
     <Compile Include="DTO\DonVi_Nam.cs">
       <DependentUpon>dbModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DTO\ModelView\TongHopVanBanDiModelView.cs" />
+    <Compile Include="DTO\ModelView\TongHopVanBanDenModelView.cs" />
     <Compile Include="DTO\ModelView\VanBanDenModelView.cs" />
     <Compile Include="DTO\ModelView\VanBanDiModelView.cs" />
     <Compile Include="DTO\Nams.cs">
